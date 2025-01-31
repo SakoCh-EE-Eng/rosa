@@ -14,12 +14,38 @@
 # limitations under the License.
 
 # This script launches the ROSA demo in Docker
+# Usage: ./demo.sh [ros1|ros2]
 
-# Check if Docker is installed
+# Check if the correct number of arguments are passed (Needs one argument either ros1 or ros2)
+if [ "$#" -ne 1 ]; then
+    echo "Usage: ./demo.sh [ros1|ros2]"
+    exit 1
+fi
+
+# Check if the first argument is either ros1 or ros2
+if [ "$1" != "ros1" ] && [ "$1" != "ros2" ]; then
+    echo "Usage: ./demo.sh [ros1|ros2]"
+    exit 1
+fi
+
+# Check if User has Docker installed
 if ! command -v docker &> /dev/null; then
     echo "Error: Docker is not installed. Please install Docker and try again."
     exit 1
 fi
+
+# Check if the user has docker-compose installed
+if ! command -v docker-compose &> /dev/null; then
+    echo "Docker-compose is not installed. Please install docker-compose and try again."
+    exit 1
+fi
+
+# Check if the user has xhost is installed
+if ! command -v xhost &> /dev/null; then
+    echo "xhost-xserver-utils is not installed. Please install xhost-xserver-utils and try again."
+    exit 1
+fi
+
 
 # Set default headless mode
 HEADLESS=${HEADLESS:-false}
@@ -53,12 +79,23 @@ if ! xset q &>/dev/null; then
     exit 1
 fi
 
-# Build and run the Docker container
+# Parse the argument for helping choose docker file based on ros version
+ros_version=$1
+
+# Set the ros distro specific dockerfile
+if [ "$ros_version" == "ros1" ]; then
+    dockerfile="DockerfileROS1" 
+else
+    dockerfile="DockerfileROS2"
+fi
+
+# Build the docker image/container
 CONTAINER_NAME="rosa-turtlesim-demo"
 echo "Building the $CONTAINER_NAME Docker image..."
-docker build --build-arg DEVELOPMENT=$DEVELOPMENT -t $CONTAINER_NAME -f Dockerfile . || { echo "Error: Docker build failed"; exit 1; }
+docker build --build-arg DEVELOPMENT=$DEVELOPMENT -t $CONTAINER_NAME -f $dockerfile . || { echo "Error: Docker build failed"; exit 1; }
 
-echo "Running the Docker container..."
+#Run the Docker Container
+echo "Running the Docker container..."          
 docker run -it --rm --name $CONTAINER_NAME \
     -e DISPLAY=$DISPLAY \
     -e HEADLESS=$HEADLESS \
@@ -70,6 +107,6 @@ docker run -it --rm --name $CONTAINER_NAME \
     $CONTAINER_NAME
 
 # Disable X11 forwarding
-xhost -
+#xhost -
 
 exit 0
