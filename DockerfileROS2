@@ -1,0 +1,43 @@
+FROM osrf/ros:humble-desktop AS rosa-ros2
+
+# Install linux packages
+RUN apt update && apt install -y \
+    locales \
+    xvfb \
+    git \
+    subversion \
+    nano \
+    wget \
+    htop \
+    curl \
+    x11-xserver-utils \
+    libssl-dev \
+    build-essential \
+    dbus-x11 \
+    software-properties-common \
+    ssh \
+    ros-humble-turtlesim
+
+# RUN apt-get clean && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y default-jre python3-pip
+RUN python3 -m pip install -U langchain langchain-openai python-dotenv numpy
+
+# Configure ROS
+RUN echo "source /opt/ros/humble/setup.bash" >> /root/.bashrc
+RUN echo "export ROSLAUNCH_SSH_UNKNOWN=1" >> /root/.bashrc
+
+COPY . /app/
+WORKDIR /app/
+
+# Install jpl-rosa with pip
+RUN pip3 install jpl-rosa
+
+# Run roscore in the background, then run `rosrun turtlesim turtlesim_node` in a new terminal, finally run main.py in a new terminal
+CMD /bin/bash -c 'source /opt/ros/humble/setup.bash &&  \
+    /bin/bash -c "ros2 run turtlesim turtlesim_node" &  \
+    sleep 2 &&  \
+    /bin/bash -c "ros2 run turtlesim draw_square" >/dev/null &  \
+   sleep 2 &&  \
+    /bin/bash'
+#    /bin/bash -c "python3 src/main.py --ros=2"'
+    # /bin/bash -c "python3.9 src/main.py --query \"give me details on all topics\""'
