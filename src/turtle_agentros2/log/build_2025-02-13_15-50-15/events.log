@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000188] (turtle_agentros2) JobQueued: {'identifier': 'turtle_agentros2', 'dependencies': OrderedDict()}
+[0.000283] (turtle_agentros2) JobStarted: {'identifier': 'turtle_agentros2'}
+[0.098094] (-) TimerEvent: {}
+[0.198413] (-) TimerEvent: {}
+[0.298791] (-) TimerEvent: {}
+[0.399117] (-) TimerEvent: {}
+[0.499450] (-) TimerEvent: {}
+[0.599785] (-) TimerEvent: {}
+[0.700168] (-) TimerEvent: {}
+[0.775937] (turtle_agentros2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', 'build/turtle_agentros2', 'build', '--build-base', '/app/src/turtle_agentros2/build/turtle_agentros2/build', 'install', '--record', '/app/src/turtle_agentros2/build/turtle_agentros2/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/app/src/turtle_agentros2', 'env': {'TMUX': '/tmp/tmux-0/default,149,0', 'HOSTNAME': 'docker-desktop', 'SHLVL': '3', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/root', 'OLDPWD': '/app/src/turtle_agentros2/turtle_agentros2', 'TERM_PROGRAM_VERSION': '3.2a', 'ROS_PYTHON_VERSION': '3', 'DEVELOPMENT': 'false', 'COLCON_PREFIX_PATH': '/app/src/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'screen', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'HEADLESS': 'false', 'ROSLAUNCH_SSH_UNKNOWN': '1', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'tmux', 'AMENT_PREFIX_PATH': '/app/src/install/turtle_agentros2:/opt/ros/humble', 'SHELL': '/bin/bash', 'PWD': '/app/src/turtle_agentros2/build/turtle_agentros2', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/app/src/turtle_agentros2/build/turtle_agentros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages:/app/src/install/turtle_agentros2/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'TMUX_PANE': '%0'}, 'shell': False}
+[0.800334] (-) TimerEvent: {}
+[0.900813] (-) TimerEvent: {}
+[1.001247] (-) TimerEvent: {}
+[1.101613] (-) TimerEvent: {}
+[1.126871] (turtle_agentros2) StdoutLine: {'line': b'running egg_info\n'}
+[1.127895] (turtle_agentros2) StdoutLine: {'line': b'creating build/turtle_agentros2/turtle_agentros2.egg-info\n'}
+[1.128747] (turtle_agentros2) StdoutLine: {'line': b'writing build/turtle_agentros2/turtle_agentros2.egg-info/PKG-INFO\n'}
+[1.129118] (turtle_agentros2) StdoutLine: {'line': b'writing dependency_links to build/turtle_agentros2/turtle_agentros2.egg-info/dependency_links.txt\n'}
+[1.129689] (turtle_agentros2) StdoutLine: {'line': b'writing entry points to build/turtle_agentros2/turtle_agentros2.egg-info/entry_points.txt\n'}
+[1.129907] (turtle_agentros2) StdoutLine: {'line': b'writing requirements to build/turtle_agentros2/turtle_agentros2.egg-info/requires.txt\n'}
+[1.130042] (turtle_agentros2) StdoutLine: {'line': b'writing top-level names to build/turtle_agentros2/turtle_agentros2.egg-info/top_level.txt\n'}
+[1.130433] (turtle_agentros2) StdoutLine: {'line': b"writing manifest file 'build/turtle_agentros2/turtle_agentros2.egg-info/SOURCES.txt'\n"}
+[1.133316] (turtle_agentros2) StdoutLine: {'line': b"reading manifest file 'build/turtle_agentros2/turtle_agentros2.egg-info/SOURCES.txt'\n"}
+[1.134644] (turtle_agentros2) StdoutLine: {'line': b"writing manifest file 'build/turtle_agentros2/turtle_agentros2.egg-info/SOURCES.txt'\n"}
+[1.135003] (turtle_agentros2) StdoutLine: {'line': b'running build\n'}
+[1.135440] (turtle_agentros2) StdoutLine: {'line': b'running build_py\n'}
+[1.135596] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/build/turtle_agentros2/build\n'}
+[1.135872] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/build/turtle_agentros2/build/lib\n'}
+[1.136247] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2\n'}
+[1.136645] (turtle_agentros2) StdoutLine: {'line': b'copying turtle_agentros2/llm.py -> /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2\n'}
+[1.136853] (turtle_agentros2) StdoutLine: {'line': b'copying turtle_agentros2/prompts.py -> /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2\n'}
+[1.137104] (turtle_agentros2) StdoutLine: {'line': b'copying turtle_agentros2/turtle_agent.py -> /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2\n'}
+[1.137298] (turtle_agentros2) StdoutLine: {'line': b'copying turtle_agentros2/__init__.py -> /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2\n'}
+[1.137613] (turtle_agentros2) StdoutLine: {'line': b'copying turtle_agentros2/help.py -> /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2\n'}
+[1.137722] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/tools\n'}
+[1.137834] (turtle_agentros2) StdoutLine: {'line': b'copying turtle_agentros2/tools/__init__.py -> /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/tools\n'}
+[1.137930] (turtle_agentros2) StdoutLine: {'line': b'copying turtle_agentros2/tools/turtle.py -> /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/tools\n'}
+[1.138246] (turtle_agentros2) StdoutLine: {'line': b'running install\n'}
+[1.138485] (turtle_agentros2) StdoutLine: {'line': b'running install_lib\n'}
+[1.139553] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2\n'}
+[1.139764] (turtle_agentros2) StdoutLine: {'line': b'copying /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/llm.py -> /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2\n'}
+[1.140150] (turtle_agentros2) StdoutLine: {'line': b'copying /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/prompts.py -> /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2\n'}
+[1.140410] (turtle_agentros2) StdoutLine: {'line': b'copying /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/turtle_agent.py -> /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2\n'}
+[1.140851] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/tools\n'}
+[1.141232] (turtle_agentros2) StdoutLine: {'line': b'copying /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/tools/__init__.py -> /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/tools\n'}
+[1.141334] (turtle_agentros2) StdoutLine: {'line': b'copying /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/tools/turtle.py -> /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/tools\n'}
+[1.141427] (turtle_agentros2) StdoutLine: {'line': b'copying /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/__init__.py -> /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2\n'}
+[1.141523] (turtle_agentros2) StdoutLine: {'line': b'copying /app/src/turtle_agentros2/build/turtle_agentros2/build/lib/turtle_agentros2/help.py -> /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2\n'}
+[1.141817] (turtle_agentros2) StdoutLine: {'line': b'byte-compiling /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/llm.py to llm.cpython-310.pyc\n'}
+[1.142417] (turtle_agentros2) StdoutLine: {'line': b'byte-compiling /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/prompts.py to prompts.cpython-310.pyc\n'}
+[1.142721] (turtle_agentros2) StdoutLine: {'line': b'byte-compiling /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/turtle_agent.py to turtle_agent.cpython-310.pyc\n'}
+[1.144744] (turtle_agentros2) StdoutLine: {'line': b'byte-compiling /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/tools/__init__.py to __init__.cpython-310.pyc\n'}
+[1.145112] (turtle_agentros2) StdoutLine: {'line': b'byte-compiling /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/tools/turtle.py to turtle.cpython-310.pyc\n'}
+[1.147504] (turtle_agentros2) StdoutLine: {'line': b'byte-compiling /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/__init__.py to __init__.cpython-310.pyc\n'}
+[1.147902] (turtle_agentros2) StdoutLine: {'line': b'byte-compiling /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2/help.py to help.cpython-310.pyc\n'}
+[1.148021] (turtle_agentros2) StdoutLine: {'line': b'running install_data\n'}
+[1.148384] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/install/turtle_agentros2/share/ament_index\n'}
+[1.148659] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/install/turtle_agentros2/share/ament_index/resource_index\n'}
+[1.148881] (turtle_agentros2) StdoutLine: {'line': b'creating /app/src/turtle_agentros2/install/turtle_agentros2/share/ament_index/resource_index/packages\n'}
+[1.149163] (turtle_agentros2) StdoutLine: {'line': b'copying resource/turtle_agentros2 -> /app/src/turtle_agentros2/install/turtle_agentros2/share/ament_index/resource_index/packages\n'}
+[1.149283] (turtle_agentros2) StdoutLine: {'line': b'copying package.xml -> /app/src/turtle_agentros2/install/turtle_agentros2/share/turtle_agentros2\n'}
+[1.149377] (turtle_agentros2) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.151391] (turtle_agentros2) StdoutLine: {'line': b'Copying build/turtle_agentros2/turtle_agentros2.egg-info to /app/src/turtle_agentros2/install/turtle_agentros2/lib/python3.10/site-packages/turtle_agentros2-0.0.0-py3.10.egg-info\n'}
+[1.152402] (turtle_agentros2) StdoutLine: {'line': b'running install_scripts\n'}
+[1.179328] (turtle_agentros2) StdoutLine: {'line': b'Installing talker script to /app/src/turtle_agentros2/install/turtle_agentros2/lib/turtle_agentros2\n'}
+[1.180039] (turtle_agentros2) StdoutLine: {'line': b"writing list of installed files to '/app/src/turtle_agentros2/build/turtle_agentros2/install.log'\n"}
+[1.201878] (-) TimerEvent: {}
+[1.206122] (turtle_agentros2) CommandEnded: {'returncode': 0}
+[1.218196] (turtle_agentros2) JobEnded: {'identifier': 'turtle_agentros2', 'rc': 0}
+[1.219587] (-) EventReactorShutdown: {}
